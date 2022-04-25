@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Questions!</title>
+    <!-- link to google stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Welcome to Trivia!</h1>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="question-container">
+          <div class="container-border"></div>
+          <h2 class="question"></h2>
+          <div class="options-container">
+            <input type="radio" name="option" checked class="hidden" />
+
+            <input type="radio" name="option" id="optionA" value="optionA" />
+            <label for="optionA" class="optionA"></label>
+
+            <input type="radio" name="option" id="optionB" value="optionB" />
+            <label for="optionB" class="optionB"></label>
+
+            <input type="radio" name="option" id="optionC" value="optionC" />
+            <label for="optionC" class="optionC"></label>
+          </div>
+          <p class="display-answer"></p>
+        </div>
+        <button class="refresh-question">Try another!</button>
+      </div>
+    </main>
+    <footer>
+      <p>Created at Juno College for Technology</p>
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- JS script -->
+    <script src="./app.js"></script>
+  </body>
+</html>
